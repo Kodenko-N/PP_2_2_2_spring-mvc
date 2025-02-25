@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User edit form</title>
+</head>
+<body>
+
+<form th:method="PATCH" th:action="@{/users/{id} (id=${user.getId()})}" th:object="${user}">
+    <label for="name">Как зовут?</label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <br/>
+    <label for="secondName">Фамилия?</label>
+    <input type="text" th:field="*{secondName}" id="secondName"/>
+    <br/>
+    <label for="alcoholType">Что пить будешь?</label>
+    <input type="text" th:field="*{alcoholType}" id="alcoholType"/>
+    <br/>
+    <input type="submit"/>
+</form>
+
+</body>
+</html>
