@@ -8,7 +8,7 @@ import web.DAO.UserDAO;
 import web.model.User;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/")
 public class UsersController {
 
     private final UserDAO userDAO;
@@ -39,7 +39,7 @@ public class UsersController {
     @PostMapping
     public String create(@ModelAttribute("user") User user) {
        userDAO.save(user);
-       return "redirect:/users";
+       return "redirect:/";
     }
 
     @GetMapping("/{id}/edit")
@@ -51,12 +51,12 @@ public class UsersController {
     @PatchMapping("/{id}")
     public String update(@ModelAttribute("user") User user, @PathVariable ("id") int id) {
         userDAO.update(id, user);
-        return "redirect:/users";
+        return "redirect:/";
     }
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable ("id") int id) {
         userDAO.delete(id);
-        return "redirect:/users";
+        return "redirect:/";
     }
 }

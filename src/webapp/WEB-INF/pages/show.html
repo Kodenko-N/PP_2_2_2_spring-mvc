@@ -11,11 +11,11 @@
 <p>Фамилия: <span th:text = "${user.getSecondName()}">name </span> </p>
 <p>Любимый напиток: <span th:text = "${user.getAlcoholType()}">name </span> </p>
 
-<a th:href="@{/users/{id}/edit (id=${user.getId()})}"> Исправить данные </a>
+<a th:href="@{/{id}/edit (id=${user.getId()})}"> Исправить данные </a>
 <br/>
-<a th:href="@{/users}"> К списку отдыхающих</a>
+<a th:href="@{/}"> К списку отдыхающих</a>
 <br/>
-<form th:method="DELETE" th:action="@{/users/{id} (id=${user.getId()})}">
+<form th:method="DELETE" th:action="@{/{id} (id=${user.getId()})}">
     <input type="submit" value = "DELETE USER"/>
 </form>
 
