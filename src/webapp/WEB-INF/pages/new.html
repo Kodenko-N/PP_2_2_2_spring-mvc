@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form th:method="POST" th:action="@{/}" th:object="${user}"> </form>
+<form th:method="POST" th:action="@{/}" th:object="${user}">
 <label for="name">Введите имя: </label>
 <input type = "text" th:field="*{name}" id="name">
 <br/>
@@ -19,6 +19,5 @@
 <br/>
 <input type="submit"/>
 </form>
-
 </body>
 </html>
