@@ -25,7 +25,7 @@ public class UsersController {
     }
 
     @GetMapping("/{id}")
-    public String userShow(@PathVariable ("id") int id, Model model) {
+    public String userShow(@RequestParam int id, Model model) {
         model.addAttribute("user", userDAO.userShow(id));
         return "show";
     }
@@ -43,7 +43,7 @@ public class UsersController {
     }
 
     @GetMapping("/{id}/edit")
-    public String edit(@PathVariable ("id") int id, Model model) {
+    public String edit(@RequestParam int id, Model model) {
         model.addAttribute("user", userDAO.userShow(id));
         return "edit";
     }

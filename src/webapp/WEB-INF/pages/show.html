@@ -11,7 +11,7 @@
 <p>Фамилия: <span th:text = "${user.getSecondName()}">name </span> </p>
 <p>Любимый напиток: <span th:text = "${user.getAlcoholType()}">name </span> </p>
 
-<a th:href="@{/users/{id}/edit (id=${user.getId()})}"> Исправить данные </a>
+<a th:href="@{/users/{id}/edit?id={id} (id=${user.getId()})}"> Исправить данные </a>
 <br/>
 <a th:href="@{/users}"> К списку отдыхающих</a>
 <br/>
