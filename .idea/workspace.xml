@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-mvc:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b838448-288c-4c9a-bda8-5af3db46ab32" name="Changes" comment="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor recommendation" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="PP_2_3_1_UserDB_via_EntityManagerAndTomCat_withoutPathVariable" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kodenko-N&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kodenko-N/PP_2_2_2_spring-mvc.git&quot;,
+    &quot;accountId&quot;: &quot;5be55a71-6cac-4282-b1d0-343e4996e7eb&quot;
+  }
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2sqpwycHFwNVFfcB9306pzzK2Ao" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Tomcat Server.KN_Tomcat_Server.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ThinkPad/IdeaProjects/PP_2_2_2_spring-mvc",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4275862",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora",
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ThinkPad\IdeaProjects\PP_2_2_2_spring-mvc\src\webapp\WEB-INF\pages\users" />
+      <recent name="C:\Users\ThinkPad\IdeaProjects\PP_2_2_2_spring-mvc\src\main\resources" />
+      <recent name="C:\Users\ThinkPad\IdeaProjects\PP_2_2_2_spring-mvc\src\main\java\web\Service" />
+      <recent name="C:\Users\ThinkPad\IdeaProjects\PP_2_2_2_spring-mvc\src\main\java\web\DAO" />
+      <recent name="C:\Users\ThinkPad\IdeaProjects\PP_2_2_2_spring-mvc\src\main\java\web\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ThinkPad\IdeaProjects\PP_2_2_2_spring-mvc\src\webapp\WEB-INF\pages" />
+      <recent name="C:\Users\ThinkPad\IdeaProjects\PP_2_2_2_spring-mvc\src\webapp\WEB-INF\pages\users" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="web.config" />
+      <recent name="web.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="KN_Tomcat_Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.99" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spring-mvc:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="887a948f-902b-45d6-a300-07ddfc68b247" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53066" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-mvc:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b838448-288c-4c9a-bda8-5af3db46ab32" name="Changes" comment="" />
+      <created>1739193201836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739193201836</updated>
+      <workItem from="1739193203174" duration="2521000" />
+      <workItem from="1739261863233" duration="505000" />
+      <workItem from="1739262421007" duration="6742000" />
+      <workItem from="1739364313457" duration="9147000" />
+      <workItem from="1739432540202" duration="9769000" />
+      <workItem from="1739459863532" duration="249000" />
+      <workItem from="1739460124540" duration="204000" />
+      <workItem from="1739898879900" duration="11755000" />
+      <workItem from="1739954614432" duration="5456000" />
+      <workItem from="1740398383390" duration="10091000" />
+      <workItem from="1740472688583" duration="8046000" />
+      <workItem from="1740483024891" duration="3057000" />
+      <workItem from="1740493560517" duration="1225000" />
+      <workItem from="1740501114560" duration="124000" />
+      <workItem from="1740555192373" duration="7497000" />
+      <workItem from="1740660006701" duration="13415000" />
+      <workItem from="1740769947784" duration="668000" />
+      <workItem from="1740816651361" duration="199000" />
+      <workItem from="1740816960902" duration="763000" />
+      <workItem from="1740819509633" duration="52000" />
+      <workItem from="1740823020208" duration="727000" />
+      <workItem from="1740826156059" duration="602000" />
+      <workItem from="1741119600865" duration="303000" />
+      <workItem from="1741249884884" duration="453000" />
+    </task>
+    <task id="LOCAL-00001" summary="PP_2_2_2 Spring-MVC (cars)&#10;V.1.0">
+      <option name="closed" value="true" />
+      <created>1739368968163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739368968163</updated>
+    </task>
+    <task id="LOCAL-00002" summary="PP_2_2_3 Hibernate-Spring-MVC (Users)&#10;V.1.0">
+      <option name="closed" value="true" />
+      <created>1739459472581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739459472581</updated>
+    </task>
+    <task id="LOCAL-00003" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.0.2">
+      <option name="closed" value="true" />
+      <created>1739914234302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739914234302</updated>
+    </task>
+    <task id="LOCAL-00004" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.0.3">
+      <option name="closed" value="true" />
+      <created>1740473310371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740473310371</updated>
+    </task>
+    <task id="LOCAL-00005" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.0.3">
+      <option name="closed" value="true" />
+      <created>1740558494934</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740558494934</updated>
+    </task>
+    <task id="LOCAL-00006" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor reccomendation">
+      <option name="closed" value="true" />
+      <created>1740668162941</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740668162941</updated>
+    </task>
+    <task id="LOCAL-00007" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor reccomendation">
+      <option name="closed" value="true" />
+      <created>1740670344252</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740670344252</updated>
+    </task>
+    <task id="LOCAL-00008" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor reccomendation">
+      <option name="closed" value="true" />
+      <created>1740673593169</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740673593169</updated>
+    </task>
+    <task id="LOCAL-00009" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor reccomendation">
+      <option name="closed" value="true" />
+      <created>1740684759765</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740684759765</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="PP_2_3_1_UserDB_via_EntityManagerAndTomCat" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PP_2_2_2 Spring-MVC (cars)&#10;V.1.0" />
+    <MESSAGE value="PP_2_2_3 Hibernate-Spring-MVC (Users)&#10;V.1.0" />
+    <MESSAGE value="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.0.2" />
+    <MESSAGE value="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.0.3" />
+    <MESSAGE value="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor reccomendation" />
+    <MESSAGE value="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor recommendation" />
+    <option name="LAST_COMMIT_MESSAGE" value="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor recommendation" />
+  </component>
+</project>

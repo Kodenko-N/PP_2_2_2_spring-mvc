@@ -1,0 +1,169 @@
+Index: src/main/java/web/DAO/UserDAO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package web.DAO;\r\n\r\nimport org.springframework.stereotype.Component;\r\nimport web.model.User;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\n@Component\r\npublic class UserDAO {\r\n    private static int userIDcount;\r\n    private List<User> users;\r\n    {\r\n        users = new ArrayList<User>();\r\n        users.add(new User(++userIDcount, \"Ванюша\", \"Иванов\", \"Водочка\"));\r\n        users.add(new User(++userIDcount, \"Леночка\", \"Иванова\", \"Просеко\"));\r\n        users.add(new User(++userIDcount, \"Сереженька\", \"Сергеев\", \"Дядюшка СЭМ\"));\r\n        users.add(new User(++userIDcount, \"Катюша\", \"Петрова\", \"Шампанское\"));\r\n        users.add(new User(++userIDcount, \"Петя\", \"Васечкин\", \"Вискарик\"));\r\n    }\r\n\r\n    public List<User> getUsers() {\r\n        return users;\r\n    }\r\n\r\n    public User userShow (int userIDin) {\r\n        User user = null;\r\n        if (userIDin <= userIDcount) {\r\n            user = users.get(userIDin-1);\r\n        }\r\n        return user;\r\n    }\r\n\r\n    public void save (User user) {\r\n        user.setId(++userIDcount);\r\n        users.add(user);\r\n    }\r\n\r\n    public void update(int id, User updatedUser) {\r\n        User userForUpdate = userShow(id);\r\n        userForUpdate.setName(updatedUser.getName());\r\n        userForUpdate.setSecondName(updatedUser.getSecondName());\r\n        userForUpdate.setAlcoholType(updatedUser.getAlcoholType());\r\n    }\r\n\r\n    public void delete (int id) {\r\n        users.remove(id-1);\r\n        userIDcount--;\r\n        //users.removeIf(p -> p.getId() == id);\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/web/DAO/UserDAO.java b/src/main/java/web/DAO/UserDAO.java
+--- a/src/main/java/web/DAO/UserDAO.java	(revision 6a145fa2fa7d5e0cc283906de1b1f2fe1f64f1bf)
++++ b/src/main/java/web/DAO/UserDAO.java	(date 1740560005863)
+@@ -1,52 +1,46 @@
+-package web.DAO;
+-
+-import org.springframework.stereotype.Component;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Service;
+ import web.model.User;
+ 
+ import java.util.ArrayList;
+ import java.util.List;
++import java.util.concurrent.atomic.AtomicLong;
+ 
+-@Component
++@Service
+ public class UserDAO {
+-    private static int userIDcount;
+-    private List<User> users;
+-    {
+-        users = new ArrayList<User>();
+-        users.add(new User(++userIDcount, "Ванюша", "Иванов", "Водочка"));
+-        users.add(new User(++userIDcount, "Леночка", "Иванова", "Просеко"));
+-        users.add(new User(++userIDcount, "Сереженька", "Сергеев", "Дядюшка СЭМ"));
+-        users.add(new User(++userIDcount, "Катюша", "Петрова", "Шампанское"));
+-        users.add(new User(++userIDcount, "Петя", "Васечкин", "Вискарик"));
++    private final List<User> users = new ArrayList<>();
++    private final AtomicLong counter = new AtomicLong();
++
++    public UserService() {
++        // Инициализация тестовыми данными
++        users.add(new User(counter.incrementAndGet(), "Alice"));
++        users.add(new User(counter.incrementAndGet(), "Bob"));
+     }
+ 
+-    public List<User> getUsers() {
++    public List<User> getAllUsers() {
+         return users;
+     }
+ 
+-    public User userShow (int userIDin) {
+-        User user = null;
+-        if (userIDin <= userIDcount) {
+-            user = users.get(userIDin-1);
+-        }
+-        return user;
++    public User getUserById(Long id) {
++        return users.stream()
++                .filter(user -> user.getId().equals(id))
++                .findFirst()
++                .orElse(null);
+     }
+ 
+-    public void save (User user) {
+-        user.setId(++userIDcount);
++    public void addUser(User user) {
++        user.setId(counter.incrementAndGet());
+         users.add(user);
+     }
+ 
+-    public void update(int id, User updatedUser) {
+-        User userForUpdate = userShow(id);
+-        userForUpdate.setName(updatedUser.getName());
+-        userForUpdate.setSecondName(updatedUser.getSecondName());
+-        userForUpdate.setAlcoholType(updatedUser.getAlcoholType());
+-    }
+-
+-    public void delete (int id) {
+-        users.remove(id-1);
+-        userIDcount--;
+-        //users.removeIf(p -> p.getId() == id);
++    public void updateUser(User updatedUser) {
++        User user = getUserById(updatedUser.getId());
++        if (user != null) {
++            user.setName(updatedUser.getName());
++        }
+     }
+ 
+-}
++    public void deleteUser(Long id) {
++        users.removeIf(user -> user.getId().equals(id));
++    }
++}
+\ No newline at end of file
+Index: src/main/java/web/model/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package web.model;\r\n\r\npublic class User {\r\n\r\n    private int id;\r\n    private String name;\r\n    private String secondName;\r\n    private String alcoholType;\r\n\r\n    public User(int id, String name, String secondName, String alcoholType) {\r\n        this.id = id;\r\n        this.name = name;\r\n        this.secondName = secondName;\r\n        this.alcoholType = alcoholType;\r\n    }\r\n\r\n    public User(String name, String secondName, String alcoholType) {\r\n        this.name = name;\r\n        this.secondName = secondName;\r\n        this.alcoholType = alcoholType;\r\n    }\r\n\r\n    public User() { }\r\n\r\n    public void setId(int id) {\r\n        this.id = id;\r\n    }\r\n\r\n    public int getId() {\r\n        return id;\r\n    }\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n\r\n    public String getSecondName() {\r\n        return secondName;\r\n    }\r\n\r\n    public void setSecondName(String secondName) {\r\n        this.secondName = secondName;\r\n    }\r\n\r\n    public String getAlcoholType() {\r\n        return alcoholType;\r\n    }\r\n\r\n    public void setAlcoholType(String alcoholType) {\r\n        this.alcoholType = alcoholType;\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        return \"Этого человека зовут \" + name + \" \" + secondName + \" (ID = \"\r\n                 + id + \" и он предпочитает \" + alcoholType;\r\n\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/web/model/User.java b/src/main/java/web/model/User.java
+--- a/src/main/java/web/model/User.java	(revision 6a145fa2fa7d5e0cc283906de1b1f2fe1f64f1bf)
++++ b/src/main/java/web/model/User.java	(date 1740559229442)
+@@ -1,33 +1,16 @@
+ package web.model;
+ 
+ public class User {
+-
+-    private int id;
++    private Long id;
+     private String name;
+-    private String secondName;
+-    private String alcoholType;
+ 
+-    public User(int id, String name, String secondName, String alcoholType) {
++    // Геттеры и сеттеры
++    public Long getId() {
++        return id;
++    }
++
++    public void setId(Long id) {
+         this.id = id;
+-        this.name = name;
+-        this.secondName = secondName;
+-        this.alcoholType = alcoholType;
+-    }
+-
+-    public User(String name, String secondName, String alcoholType) {
+-        this.name = name;
+-        this.secondName = secondName;
+-        this.alcoholType = alcoholType;
+-    }
+-
+-    public User() { }
+-
+-    public void setId(int id) {
+-        this.id = id;
+-    }
+-
+-    public int getId() {
+-        return id;
+     }
+ 
+     public String getName() {
+@@ -37,27 +20,4 @@
+     public void setName(String name) {
+         this.name = name;
+     }
+-
+-    public String getSecondName() {
+-        return secondName;
+-    }
+-
+-    public void setSecondName(String secondName) {
+-        this.secondName = secondName;
+-    }
+-
+-    public String getAlcoholType() {
+-        return alcoholType;
+-    }
+-
+-    public void setAlcoholType(String alcoholType) {
+-        this.alcoholType = alcoholType;
+-    }
+-
+-    @Override
+-    public String toString() {
+-        return "Этого человека зовут " + name + " " + secondName + " (ID = "
+-                 + id + " и он предпочитает " + alcoholType;
+-
+-    }
+-}
++}
+\ No newline at end of file

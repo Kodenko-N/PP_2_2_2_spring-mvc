@@ -1,0 +1,17 @@
+Index: src/webapp/WEB-INF/pages/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:th=\"http://www.thymeleaf.org\">\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title></title>\r\n</head>\r\n<body>\r\n<div>\r\n    <th:block th:each=\"msg : ${messages}\">\r\n        <h1 th:text=\"${msg}\"></h1>\r\n    </th:block>\r\n</div>\r\n</body>\r\n</html>
+===================================================================
+diff --git a/src/webapp/WEB-INF/pages/index.html b/src/webapp/WEB-INF/pages/index.html
+--- a/src/webapp/WEB-INF/pages/index.html	(revision ebe7d3dc75f155e49a4bb66a57c37c9814d20e03)
++++ b/src/webapp/WEB-INF/pages/index.html	(date 1740660308770)
+@@ -10,6 +10,7 @@
+     <th:block th:each="msg : ${messages}">
+         <h1 th:text="${msg}"></h1>
+     </th:block>
++    <a 
+ </div>
+ </body>
+ </html>
+\ No newline at end of file
