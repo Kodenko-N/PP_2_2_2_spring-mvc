@@ -1,11 +1,8 @@
 package web.DAO;
-
 import web.model.Car;
-
 import java.util.ArrayList;
-import java.util.List;
 
-public class CarDAOArrayList implements CarDAO {
+public class CarServiceImpl implements CarService {
     ArrayList<Car> cars = new ArrayList<>();
 
     {
@@ -26,23 +23,23 @@ public class CarDAOArrayList implements CarDAO {
         return cars;
     }
 
-    @Override
-    public Car getCar(int id) {
-        return cars.get(id);
-    }
-
-    @Override
-    public void addCar(Car car) {
-        cars.add(car);
-    }
-
-    @Override
-    public void updateCar(Car car, int id) {
-        cars.set(id, car);
-    }
-
-    @Override
-    public void deleteCar(int id) {
-        cars.remove(id);
-    }
+//    @Override
+//    public Car getCar(int id) {
+//        return cars.get(id);
+//    }
+//
+//    @Override
+//    public void addCar(Car car) {
+//        cars.add(car);
+//    }
+//
+//    @Override
+//    public void updateCar(Car car, int id) {
+//        cars.set(id, car);
+//    }
+//
+//    @Override
+//    public void deleteCar(int id) {
+//        cars.remove(id);
+//    }
 }

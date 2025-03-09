@@ -9,7 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b838448-288c-4c9a-bda8-5af3db46ab32" name="Changes" comment="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor recommendation" />
+    <list default="true" id="5b838448-288c-4c9a-bda8-5af3db46ab32" name="Changes" comment="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor recommendation">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_02_2025_15_45_[Changes]2/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_02_2025_15_45__Changes_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/DAO/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/DAO/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/DAO/CarDAOArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/DAO/CarServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/cars.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/cars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/web/DAO/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/web/config/AppInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/web/config/AppInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/web/controller/UsersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/web/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/DAO/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/config/AppInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/config/AppInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/controller/UsersController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/model/User.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +97,7 @@
     "Tomcat Server.KN_Tomcat_Server.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ThinkPad/IdeaProjects/PP_2_2_2_spring-mvc",
+    "last_opened_file_path": "C:/Users/ThinkPad/IdeaProjects/PP_2_3_1_FisrtWeb_ED_Edition",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,7 +135,7 @@
   </component>
   <component name="RunManager">
     <configuration name="KN_Tomcat_Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.99" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cars" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="spring-mvc:war exploded">
@@ -241,7 +262,9 @@
       <workItem from="1740823020208" duration="727000" />
       <workItem from="1740826156059" duration="602000" />
       <workItem from="1741119600865" duration="303000" />
-      <workItem from="1741249884884" duration="453000" />
+      <workItem from="1741249884884" duration="1391000" />
+      <workItem from="1741253084716" duration="126000" />
+      <workItem from="1741271250360" duration="7092000" />
     </task>
     <task id="LOCAL-00001" summary="PP_2_2_2 Spring-MVC (cars)&#10;V.1.0">
       <option name="closed" value="true" />
@@ -315,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740684759765</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="PP_2_3_1 Hibernate-Spring-MVC (Users)&#10;V.1.0&#10;Updated by Mentor recommendation">
+      <option name="closed" value="true" />
+      <created>1741250450158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741250450158</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

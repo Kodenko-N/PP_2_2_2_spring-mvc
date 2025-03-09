@@ -10,6 +10,30 @@
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
     </th:block>
+
+    <legend align="center" style="color:red"> <h1> COOL CARS </h1> </legend>
+    <table border="1" width="90%" align="center">
+        <tr>
+            <th width="20%">BRAND</th>
+            <th width="20%">MODEL</th>
+            <th width="12%">YEAR</th>
+            <th>COMMENT</th>
+        </tr>
+        <th:block th:each="car : ${cars}">
+            <tr>
+                <td th:utext="${car.brand}"></td>
+                <td th:utext="${car.model}"></td>
+                <td th:utext="${car.year}"></td>
+                <td th:utext="${car.comment}"></td>
+            </tr>
+        </th:block>
+    </table>
+    </fieldset>
+    </form>
+
+
+
+
 </div>
 </body>
 </html>
