@@ -1,38 +1,27 @@
 package web.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import web.DAO.CarService;
-import web.DAO.CarServiceImpl;
-import web.model.Car;
-
-import java.util.ArrayList;
-import java.util.List;
+import web.Service.CarService;
+import web.Service.CarServiceImpl;
 
 @Controller
 public class CarController {
 
-	private CarService carService = new CarServiceImpl();
+    private final CarService carService;
 
-	public int CountCheck(int count) {
-		if (count < 1) {
-			count = 1;
-		}
-		if (count > carService.getCars().size()) {
-			count = carService.getCars().size();
-		}
-		return count;
-	}
+    @Autowired
+    public CarController(CarService carService) {
+        this.carService = carService;
+    }
 
-	@GetMapping(value = "/cars")
-	//Параметр count не защищен от чисел вне пределов int и текстовых данных(!). Если принимать параметр как String
-	// можно обработать исключения в CountCheck
-	public String printCar(@RequestParam (name = "count", defaultValue = "5", required = false) Integer countUnchecked, ModelMap model) {
-		model.addAttribute("cars", carService.getCars().subList(0, CountCheck(countUnchecked)));
-		model.addAttribute("cars", carService.getCars().subList(0, countUnchecked));
-		return "cars";
-	}
-	
+    @GetMapping(value = "/cars")
+	public String printCar(@RequestParam(name = "count", defaultValue = "5", required = false) Integer count, ModelMap model) {
+        model.addAttribute("cars", carService.getCarsByCount(count));
+        return "cars";
+    }
+
 }
